@@ -1,0 +1,29 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function pulaLinha() {
+
+        document.write("<br>");
+        document.write("<br>");
+}
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+}
+    var numero = Math.round(Math.random() * 100);
+    mostra(numero);
+
+    var chute = parseInt(prompt("Digite um numero de 0 a 99"));
+
+    if(chute == numero) {
+        mostra("Você acertou!!!")
+    } 
+    else {
+        mostra("Você errou!!!")
+    }
+
+
+</script>
